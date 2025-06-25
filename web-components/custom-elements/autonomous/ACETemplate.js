@@ -7,6 +7,7 @@ export class ACETemplate extends HTMLElement {
     }
     const { element } = this._HTMLData;
     if (!element) return;
+    this.addEventListener("click", this);
   }
   handleEvent(e) {
     console.log(this, e.target);
